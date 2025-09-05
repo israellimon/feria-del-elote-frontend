@@ -63,6 +63,7 @@ export const AuthProvider = ({ children }) => {
       } catch (err) {
         setToken(null);
         setUser(null);
+        console.log(err)
       } finally {
         setLoading(false);
       }
